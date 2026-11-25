@@ -6,12 +6,12 @@ pengolahan citra klasik + machine learning: CLAHE, segmentasi Otsu, fitur GLCM/L
 **Kelompok 1 · TI3E **
 Mata Kuliah Pengolahan Citra dan Visi Komputer (PCVK)
 
-| Anggota | Bagian |
+| Anggota | NIM | Bagian |
 |---|---|---|
-| Destian Dwi Hardika  | Dataset & Praproses |
-| Raditya Riefki  | Segmentasi & ROI |
-| Indhira Yuantika Christy  | Ekstraksi Fitur |
-| Fifa Nuurun Halizah  | Klasifikasi & Evaluasi |
+| Destian Dwi Hardika | - | Dataset & Praproses |
+| Raditya Riefki | — | Segmentasi & ROI |
+| Indhira Yuantika Christy | — | Ekstraksi Fitur |
+| Fifa Nuurun Halizah | — | Klasifikasi & Evaluasi |
 
 ---
 
@@ -21,8 +21,6 @@ Mata Kuliah Pengolahan Citra dan Visi Komputer (PCVK)
 - Sumber: Zenodo, DOI [10.5281/zenodo.18824283](https://doi.org/10.5281/zenodo.18824283)
 - Lisensi: CC BY 4.0
 - Isi: 2.285 citra grayscale TIFF — 1.192 lesion / 1.093 healthy — 1.295 pasien
-- Dataset **tidak disertakan** di repo ini (ukuran ±470 MB). Unduh dari Zenodo, lalu letakkan di
-  Google Drive dengan struktur:
 
 ```
 MyDrive/
@@ -32,25 +30,6 @@ MyDrive/
 ```
 
 ---
-
-## Struktur Repo
-
-```
-.
-├── notebooks/
-│   ├── 00_Verifikasi_Dataset.ipynb            # cek dataset + screenshot jumlah citra per kelas
-│   ├── 01_Proyek_Akhir_PCVK.ipynb             # MASTER: pipeline lengkap (Run all)
-│   ├── 01a_Dataset_Praproses.ipynb            # Destian  — EDA, split, CLAHE, analisis praproses
-│   ├── 01b_Raditya_Segmentasi_ROI.ipynb       # Raditya  — Otsu, morfologi, apex, ROI
-│   ├── 01c_Indhira_Ekstraksi_Fitur.ipynb      # Indhira  — GLCM, LBP, bentuk, analisis fitur
-│   └── 01d_Fifa_Klasifikasi_Evaluasi.ipynb    # Fifa     — SVM, RF, evaluasi, perbandingan
-├── docs/
-│   ├── 01_Rencana_Proyek_Akhir_PCVK.pdf
-│   ├── 02_Penjelasan_Metode_Proyek.pdf
-│   └── 03_Penjelasan_Sel_Notebook.pdf
-├── .gitignore
-└── README.md
-```
 
 ---
 
@@ -91,14 +70,6 @@ Diuji pada **345 citra test** yang belum pernah dilihat model:
 4. **SVM konsisten mengalahkan Random Forest** di 8 dari 8 pasangan skenario.
 
 ---
-
-## Cara Menjalankan
-
-1. Upload dataset ke Drive (lihat bagian Dataset di atas).
-2. Buka notebook di Google Colab — pilih **Runtime → Change runtime type → CPU** (tidak perlu GPU).
-3. Jalankan `notebooks/01_Proyek_Akhir_PCVK.ipynb` → **Runtime → Run all**.
-4. Fitur hasil ekstraksi otomatis di-cache ke `MyDrive/proyek_pcvk_cache/` sehingga run berikutnya
-   hanya butuh ±15 detik (bukan 7 menit).
 
 ---
 
