@@ -6,12 +6,12 @@ pengolahan citra klasik + machine learning: CLAHE, segmentasi Otsu, fitur GLCM/L
 **Kelompok 1 · TI3E **
 Mata Kuliah Pengolahan Citra dan Visi Komputer (PCVK)
 
-| Anggota | NIM | Bagian |
+| Anggota | Bagian |
 |---|---|---|
-| Destian Dwi Hardika | 244207020203 | Dataset & Praproses |
-| Raditya Riefki | — | Segmentasi & ROI |
-| Indhira Yuantika Christy | — | Ekstraksi Fitur |
-| Fifa Nuurun Halizah | — | Klasifikasi & Evaluasi |
+| Destian Dwi Hardika  | Dataset & Praproses |
+| Raditya Riefki  | Segmentasi & ROI |
+| Indhira Yuantika Christy  | Ekstraksi Fitur |
+| Fifa Nuurun Halizah  | Klasifikasi & Evaluasi |
 
 ---
 
